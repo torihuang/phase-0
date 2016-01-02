@@ -35,16 +35,22 @@ See the following image for more details: https://git-scm.com/book/en/v2/book/01
 0. git status <- Always start by checking your git status!
 
 1. git checkout -b branch-name <- Create a new branch to make changes
-2. Complete your work
+2. Complete your work, use the command subl . to edit files in Sublime
 3. git add . <- add all changes to the new git
 
-Reminder - check your status again!!
+Reminder - check your status again!! (see #0)
 
-4. git commit -m "commit message"
-5.
+4. git commit -m "commit message" <- commits changes, includes a detailed message of what was changed
+5. git push origin branch_name <- sends commit to a pull request
 
 ## What is a pull request and how do you create and merge one?
 
+A pull request is a request to pull your work in to the master code. After completing work on a project, you create a pull request by first committing your work (hopefully saved on an individual branch) with a well worded message, then pushing the branch using "git push origin branch-name".
 
+This request will be sent in for validation. The person checking your work will review changes, ensure it integrates with the master code, and then either approve or reject your pull request. In order to merge a pull request, go to GitHub, select "Compare and Pull Request", then view the pull request on your account. You can then press "Create Pull Request" to send the request to your teammate. Your teammate can then see the pull request, along with a comparison of changes to the previous commit, and either confirm or cancel the merge. Hopefully your code is great, and they confirm!
+
+Don't forget to delete branches on your GitHub account and locally as well once you are certain the work is complete! "git branch -d branch-name" is the command needed to delete a branch in your terminal.
 
 ## Why are pull requests preferred when working with teams?
+
+Image how big projects become with multiple developers all working on the same code. Now, imagine if different team members could all add to the master code at anytime without validation from their teammates. It would be absolute chaos! This is why pull requests are preferred when working with teams. Pull requests are an efficient and accurate way to ensure all changes made to the code are reviewed and accepted by the team. With this method, there is some reassurance that everyone's code will work in harmony.

@@ -36,7 +36,12 @@ See the following image for more details: https://git-scm.com/book/en/v2/book/01
 
 1. git checkout -b branch-name <- Create a new branch to make changes
 2. Complete your work
-3. git add
+3. git add . <- add all changes to the new git
+
+Reminder - check your status again!!
+
+4. git commit -m "commit message"
+5.
 
 ## What is a pull request and how do you create and merge one?
 

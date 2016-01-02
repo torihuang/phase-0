@@ -6,7 +6,37 @@ I currently manage my time by creating prioritized lists, and completing the top
 
 # 1.2 The Command Line Reflection
 
+A shell is the interface used to interact with your computer. For example, most people utilize a graphical user interface shell every day! When you look at the time on your Mac, open finder, move around the apps on your computer, you are likely utilizing a graphical shell. In the exercise I just completed, I was utilizing the command line interface, a one-line interface that allows you to interact with your computer. Bash is one example of a Command Line Shell. Basically, Bash is a shell but shell is not a Bash. Fun fact, Bash was one of the first Unix shells.
 
+The most challenging part of this material for me was getting through that initial video! It is a ton of information to take in all at once. I actually ended up temporarily skipping the video, and relying mostly on the Command Line Crash Course, which seems pretty thorough. Then I completed the video by going back and watching 10-15 minutes per day. I guess you really do have to take that "Embracing Confusion" video we watched in week 0 to heart. I was definitely confused!
+
+I was able to successfully go through all the commands. It feels pretty good to have a better understanding of that command line. It's difficult to switch from a lifetime of graphical interfaces to this one line input. That's why, in my opinion, the most important commands to know are the ones that will help you understand where you are and what the hell is going on. Mainly pwd and ls. I also really took the advice in the Crash Course tutorial to heart, and have been utilizing Cram, a flashcards app, to memorize all these commands.
+
+### List of Commands and What They Do
+
+print working directory -pwd
+
+list directory -ls
+
+move a file or directory -mv
+
+change directory -cd
+
+moves you back up
+
+the path one directory, but can also move back multiple directories if chained together -../
+
+add a new file -touch
+
+make a new directory -mkdir
+
+page through a file -less
+
+removes a directory -rmdir
+
+a dangerously easy way to delete files -rm
+
+lists possible commands and descriptions, very helpful! -help
 
 #1.4 Forking and Cloning Reflection
 

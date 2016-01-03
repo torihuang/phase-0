@@ -12,7 +12,7 @@ The most challenging part of this material for me was getting through that initi
 
 I was able to successfully go through all the commands. It feels pretty good to have a better understanding of that command line. It's difficult to switch from a lifetime of graphical interfaces to this one line input. That's why, in my opinion, the most important commands to know are the ones that will help you understand where you are and what the hell is going on. Mainly pwd and ls. I also really took the advice in the Crash Course tutorial to heart, and have been utilizing Cram, a flashcards app, to memorize all these commands.
 
-### List of Commands and What They Do
+#### List of Commands and What They Do
 
 print working directory -pwd
 
@@ -42,7 +42,7 @@ lists possible commands and descriptions, very helpful! -help
 
 Forking a repository copies an existing repository in to your own GitHub account. This is a much better method than creating a new repository and then copying a fellow developers work, for two reasons. First, this copy method may actually count as stealing, depending on the developer's license. At best, it would be a pretty shady thing to do. More practically, forking and cloning is a much faster process! If you had to create a new repository every time you wanted to copy someone else's code, you would have to create each individual folder, file, etc. That would mean time consuming work that would likely result in a few mistakes.It is much easier to simply fork a repository in to your own account!
 
-Here are some basic instructions for how to fork a repository.
+#### Here are some basic instructions for how to fork a repository.
 
 1. Navigate to the repository you want to fork on GitHub (github.com)
 2. Click "Fork" in the upper right hand corner
@@ -52,7 +52,7 @@ Here are some basic instructions for how to fork a repository.
 6. Enter "git clone <html here>"
 7. You now have the repository on your computer!
 
-If instead of forking a cloning a repo, you simply wish to create your own, follow the instructions below.
+#### If instead of forking a cloning a repo, you simply wish to create your own, follow the instructions below.
 
 1. Navigate to your GitHub account (github.com)
 2. In the upper right hand corner, next to your profile picture, click the "+" button

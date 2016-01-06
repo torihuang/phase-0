@@ -1,6 +1,6 @@
 # Tori Huang's Site Map
 
-![Tori Huang's Site Map](/Users/tori/DevBootcamp/Phase0/phase-0/week-2/imgs/Tori-Huang-Sitemap.png)
+![Tori Huang's Site Map](/week-2/imgs/Tori-Huang-Sitemap.png)
 
 ## What are the 6 Phases of Web Design?
 

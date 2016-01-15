@@ -1,14 +1,14 @@
 # Positioning Reflection
 
 ![Exercise 1](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%201.png?raw=true "Exercise 1")
-![Exercise 2](chrome-devtools/imgs/"Exercise 2.png" "Exercise 2")
-![Exercise 3](chrome-devtools/imgs/"Exercise 3.png" "Exercise 3")
-![Exercise 4](chrome-devtools/imgs/"Exercise 4.png" "Exercise 4")
-![Exercise 5](chrome-devtools/imgs/"Exercise 5.png" "Exercise 5")
-![Exercise 6](chrome-devtools/imgs/"Exercise 6.png" "Exercise 6")
-![Exercise 7](chrome-devtools/imgs/"Exercise 7.png" "Exercise 7")
-![Exercise 8](chrome-devtools/imgs/"Exercise 8.png" "Exercise 8")
-![Exercise 9](chrome-devtools/imgs/"Exercise 9.png" "Exercise 9")
+![Exercise 2](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%202.png?raw=true "Exercise 2")
+![Exercise 3](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%203.png?raw=true "Exercise 3")
+![Exercise 4](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%204.png?raw=true "Exercise 4")
+![Exercise 5](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%205.png?raw=true "Exercise 5")
+![Exercise 6](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%206.png?raw=true "Exercise 6")
+![Exercise 7](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%207.png?raw=true "Exercise 7")
+![Exercise 8](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%208.png?raw=true "Exercise 8")
+![Exercise 9](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%209.png?raw=true "Exercise 9")
 
 ## How can you use Chrome's DevTools inspector to help you format or position elements?
 

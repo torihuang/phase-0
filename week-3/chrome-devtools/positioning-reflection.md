@@ -1,6 +1,6 @@
 # Positioning Reflection
 
-![Exercise 1](phase-0/week-3/chrome-devtools/imgs/Exercise 1.png "Exercise 1")
+![Exercise 1](https://github.com/torihuang/phase-0/blob/master/week-3/chrome-devtools/imgs/Exercise%201.png?raw=true "Exercise 1")
 ![Exercise 2](chrome-devtools/imgs/"Exercise 2.png" "Exercise 2")
 ![Exercise 3](chrome-devtools/imgs/"Exercise 3.png" "Exercise 3")
 ![Exercise 4](chrome-devtools/imgs/"Exercise 4.png" "Exercise 4")

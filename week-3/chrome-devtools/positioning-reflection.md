@@ -1,14 +1,14 @@
 # Positioning Reflection
 
-![Exercise 1](./imgs/"Exercise 1.png" "Exercise 1")
-![Exercise 2](./imgs/"Exercise 2.png" "Exercise 2")
-![Exercise 3](./imgs/"Exercise 3.png" "Exercise 3")
-![Exercise 4](./imgs/"Exercise 4.png" "Exercise 4")
-![Exercise 5](./imgs/"Exercise 5.png" "Exercise 5")
-![Exercise 6](./imgs/"Exercise 6.png" "Exercise 6")
-![Exercise 7](./imgs/"Exercise 7.png" "Exercise 7")
-![Exercise 8](./imgs/"Exercise 8.png" "Exercise 8")
-![Exercise 9](./imgs/"Exercise 9.png" "Exercise 9")
+![Exercise 1](imgs/"Exercise 1.png" "Exercise 1")
+![Exercise 2](imgs/"Exercise 2.png" "Exercise 2")
+![Exercise 3](imgs/"Exercise 3.png" "Exercise 3")
+![Exercise 4](imgs/"Exercise 4.png" "Exercise 4")
+![Exercise 5](imgs/"Exercise 5.png" "Exercise 5")
+![Exercise 6](imgs/"Exercise 6.png" "Exercise 6")
+![Exercise 7](imgs/"Exercise 7.png" "Exercise 7")
+![Exercise 8](imgs/"Exercise 8.png" "Exercise 8")
+![Exercise 9](imgs/"Exercise 9.png" "Exercise 9")
 
 ## How can you use Chrome's DevTools inspector to help you format or position elements?
 

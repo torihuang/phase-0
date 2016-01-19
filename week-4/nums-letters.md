@@ -15,7 +15,7 @@ Integers are whole numbers. When dealing with integer division, the computer onl
 For float division, the computer would see 3.0 and 2.0. The computer now understands past that decimal point! That means, when the computer divides 3.0 / 2.0, it can include the 5 for 1.5.
 
 ## Calculate the number of hours in a year
-'''
+```
 valueNotEntered = true;
 
 while valueNotEntered do
@@ -32,7 +32,7 @@ while valueNotEntered do
     puts "Invalid input. Answer must be Y/N. Is it a leap year? Y/N"
   end
 end
-'''
+```
 
 ## How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 

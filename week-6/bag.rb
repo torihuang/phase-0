@@ -31,19 +31,21 @@ class Bag
     end
   end
 
+  # Remove items by type and quantity
   def remove(type, thing, quantity=0)
 
     missing_type_error = "We could not find #{type} as a type! Please try again."
     missing_item_error = "#{thing} does not exist in your list under #{type}."
     wrong_quantity_error = "You tried to delete more #{thing} than you have. #{thing} has been removed from the list."
 
-    # Checks for type
+    # Checks if type exists in list
     puts missing_type_error if !@items.has_key?(type)
     return false if !@items.has_key?(type)
 
 
     list = @items[type]
 
+    # Removes the item by quantity depending on Array or Hash type
     if list.is_a? Array then
       if list.include?(thing) then
         list.delete(thing)
@@ -67,81 +69,41 @@ class Bag
     end
   end
 
-  def check_bag(lost_item)
-    @items.each do |type,list|
-      contains_lost_item = list.any? {|item,empty| item == lost_item}
-      return true if contains_lost_item
-    end
-    return false
-  end
-
+  # List all items in your bag
   def list_items
-
-  end
-
-  def unpack
     @items.each do |type,list|
       puts "#{type}"
       puts "--------------------"
-      list.each {|item| puts item}
+      list.each {|item, key| puts "#{item} #{key}"}
+      puts ""
+    end
+  end
+
+  # Check for lost items in your bag
+  def check_bag(lost_item)
+    @items.each do |type,list|
+      contains_lost_item = list.any? {|item,empty| item == lost_item}
+      return "No worries, you already packed #{lost_item}." if contains_lost_item
+    end
+    return "Your bag is missing #{lost_item}!"
+  end
+
+  # Unpack the bag and print all contents
+  def unpack
+    list_items
+    @items.each do |type,list|
       @items.delete(type)
     end
   end
 end
 
-my_bag = Bag.new("purple", "Tori",{
-  "Toiletries"=>["toothbrush", "toothpaste", "hairdryer", "hairties", "makeup", "shampoo", "conditioner", "deoderant"],
-  "Clothes"=>{"Jeans"=>2,"Under Shirt"=>3,"Long Sleeve Shirts"=>4},
-  "Snacks"=>["Granola Bars","Apples","Chocolate"]
-  })
+nors_bag = Bag.new("Nors","Doggy Bag",{"Clothes"=>["Plaid Jacket","Blue Sweater"],"Snacks"=>{"Dog Food"=>5,"Bowl"=>1,"Food Bowl"=>1,"Treats"=>10},"Toys"=>["Stuffed Squirrel","Squeaky Duck"],"Misc"=>["Extension Leash","Short Leash","Harness","Brush"]})
 
+# Example of how to use Bag
+
+nors_bag.list_items
+nors_bag.add("Snacks","Bones",3)
+nors_bag.remove("Misc","Brush")
+puts nors_bag.check_bag("Squeaky Duck")
 puts ""
-my_bag.add("Toiletries","lotion")
-p my_bag
-
-
-puts ""
-my_bag.add("Clothes","Jeans",2)
-p my_bag
-
-puts ""
-my_bag.add("Clothes","Dress",3)
-p my_bag
-
-
-puts ""
-my_bag.remove("Clothes","Dress",2)
-p my_bag
-
-
-puts ""
-my_bag.remove("Toiletries","makeup")
-p my_bag
-
-
-puts ""
-my_bag.remove("Clothes","Jeans",10)
-p my_bag
-
-p my_bag
-puts ""
-my_bag.remove("Clothes","Jeans",10)
-p my_bag
-
-puts my_bag.items
-puts ""
-
-puts "toothbrush"
-puts my_bag.check_bag("toothbrush")
-
-puts "Jeans"
-puts my_bag.check_bag("Jeans")
-
-puts "Granola Bars"
-puts my_bag.check_bag("Granola Bars")
-
-puts "ERROR"
-puts my_bag.check_bag("ERROR")
-
-my_bag.unpack
-puts my_bag.items
+nors_bag.unpack

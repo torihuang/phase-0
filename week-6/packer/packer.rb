@@ -7,12 +7,12 @@ The purpose of this CLASS is to create a bag type that can contain a variety of 
 
 class Bag
 
-  attr_reader :name, :owner
+  attr_reader :owner, :description
   attr_accessor :items
 
-  def initialize(name, owner, items={})
-    @name = name
+  def initialize(owner, description, items={})
     @owner = owner
+    @description = description
     @items = items
   end
 
@@ -73,6 +73,10 @@ class Bag
       return true if contains_lost_item
     end
     return false
+  end
+
+  def list_items
+
   end
 
   def unpack

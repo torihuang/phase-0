@@ -65,3 +65,18 @@ startup_names.map! do |x|
 end
 
 p startup_names
+
+=begin
+
+REFLECTION
+
+What are some general rules you can apply to nested arrays?
+With nested arrays, you can access them by simply adding more [] on to the end of the array.
+
+What are some ways you can iterate over nested arrays?
+You can iterate over nested arrays using enumerable methods - particularly #each, #map, #select.
+
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+We utilized #map!. While I am familiar with #map, I do not have much experience with the destructive method yet!
+
+=end

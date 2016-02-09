@@ -1,0 +1,16 @@
+table {
+  max-width: 80%;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    width: 500px;
+}
+
+tr {
+  width: 10%;
+  height: 30px;
+}

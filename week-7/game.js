@@ -22,7 +22,14 @@ GUESS
 4. ELSE location is a miss.
 */
 
+// Create blank board
 var board = {};
+
+// Each ship has a ship size, a board size, and a ship starting
+// location. The ship randomly generates a starting location and
+// horizontal / vertical alignment. It uses a callback function
+// to create a hash of the ship's location, alter the board,
+// and check if that location is possible.
 
 function Ship(ship_size, board_size) {
     // declare variables
@@ -45,6 +52,7 @@ function Ship(ship_size, board_size) {
 
     }
 
+    // Loops through the board to complete various functions
     var loop_through_board = function(callback) {
       var currentLoc = 0;
       if (alignment === 1) currentLoc = x_start;
@@ -80,22 +88,27 @@ function Ship(ship_size, board_size) {
       return true;
     }
 
+    // Pushes ship location to array
     var create_location = function(key,value) {
       if (ship_loc[key] == undefined) ship_loc[key] = [];
       ship_loc[key].push(value);
     }
 
+    // Checks if the position is a potential spot for new ship
     var position_is_empty = function(y,x) {
       if (board[y][x] != "x") return false;
       else return true;
     }
 
+    // Adds ship location to the board
     var add_to_board = function(y,x) {
       board[y][x] = "O";
       console.log(board);
       return true;
     }
 
+    // Creates ship hash, where keys are y location and values
+    // are the x location
     var fill_ship = function(y,x) {
       create_location(y,x);
       return true;
@@ -109,6 +122,9 @@ function Ship(ship_size, board_size) {
     loop_through_board(fill_ship);
 }
 
+// The board generates a square game board with randomly placed ships
+// The size of the ships is currently hardcoded in to the game.
+// From the board, you can guess a ship location or print the board.
 function Board(size) {
     this.size = size;
     var total_hits = 0;
@@ -168,30 +184,15 @@ function Board(size) {
       }
       console.log(current_board);
     }
-    // console.log(board);
 }
 
+// Create a new Board class.
 var battleship_board = new Board(10);
 
-// console.log("          1    2    3    4    5    6    7    8    9    10")
-// console.log(board);
-
-// battleship_board.guess(5,1);
-// battleship_board.guess(5,2);
-// battleship_board.guess(5,3);
-// battleship_board.guess(5,4);
-// battleship_board.guess(5,5);
-// battleship_board.guess(5,6);
-// battleship_board.guess(5,7);
-// battleship_board.guess(5,8);
-// battleship_board.guess(5,9);
-// battleship_board.guess(5,10);
-// battleship_board.guess(10,10);
-// battleship_board.guess(1,1);
-// battleship_board.guess(1,1);
-
+// Guess every single spot on the board.
 for (var i=1; i<=10; i++) {
   for (var j=1; j<=10; j++) {battleship_board.guess(i,j);}
 }
 
+// Print out the results.
 battleship_board.print();

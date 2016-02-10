@@ -8,9 +8,9 @@
 </head>
 <body onload="startGame()">
 
-<h1>Battleship</h1>
+<h1>Sea Serpent Hunt</h1>
 
-<p id="status">Let's play! Click a square to get started.</p>
+<p id="status">A family of adorable sea serpents got lost in Lake Michigan! Help find them, so we can get them back to the ocean. Click a square to start the hunt.</p>
 
 <table>
   <tr class="row" id ="R1">
@@ -210,7 +210,6 @@ function Ship(ship_size, board_size) {
     // Adds ship location to the board
     var add_to_board = function(y,x) {
       board[y][x] = "O";
-      console.log(board);
       return true;
     }
 
@@ -252,7 +251,6 @@ function Board(size) {
       for (x in ships) {
         needed_hits += ships[x].ship_size;
       }
-      console.log("Needed hits: " + needed_hits);
     }
 
     fill_ships();
@@ -291,6 +289,12 @@ function Board(size) {
       }
       return current_board;
     }
+
+    this.did_you_win =  function() {
+      console.log('Total hits: ' + total_hits);
+      if (total_hits >= needed_hits) {return true;}
+      else {return false;}
+    }
 }
 
 var battleship_board = new Board(10);
@@ -308,12 +312,15 @@ function guess(element_id) {
     var random_status = Math.floor((Math.random() * 4));
 
     if (isHit) {
-      row.style.backgroundColor = "red";
+      row.style.backgroundColor = "#8BCB1D";
       document.getElementById("status").innerHTML = hit_array[random_status];
     }
     else {
-      row.style.backgroundColor = "black";
+      row.style.backgroundColor = "#1C1E5E";
       document.getElementById("status").innerHTML = miss_array[random_status];
+    }
+    if (battleship_board.did_you_win() === true) {
+      document.getElementById("status").innerHTML = "You Won!!!";
     }
 }
 </script>

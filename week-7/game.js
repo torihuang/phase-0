@@ -1,5 +1,8 @@
 /*
 GAME DESCRIPTION
+
+To see the game live, to go http://torihuang.github.io/projects/find_the_sea_serpents.html
+
 Battleship - but with bigger bombs. You start with a 10 x 10 board, and everyone has three ships. One that takes up two spaces, one that takes up three spaces, and one that takes up four spaces. Like typical battleship, you guess where you would like to hit the computer's board. Unlike typical battleship, you have a bomb that will explode all locations touching that space.
 
 CREATE BOARD
@@ -196,3 +199,22 @@ for (var i=1; i<=10; i++) {
 
 // Print out the results.
 battleship_board.print();
+
+/*
+
+REFLECTION
+
+To see the game live, to go http://torihuang.github.io/projects/find_the_sea_serpents.html
+
+What was the most difficult part of this challenge?
+Knowing where to stop was the most difficult part of this challenge. I absolutely loved it - I became obsessed and learned a lot! But it definitely sucked up a ton of time.
+
+What did you learn about creating objects and functions that interact with one another?
+I learned more about callback functions - that was fun!
+
+Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+Honestly, I learned so many new solutions I cannot even remember which ones are new at this point. I will say, this code could use some more refactoring. Frankly, I ran out of time to refactor more!
+
+How can you access and manipulate properties of objects?
+You can access and manipulate properties of objects through dot or bracket notation.
+*/

@@ -7,6 +7,43 @@
 oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
 evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
 
+var sum1 = 0
+function sum(oddLengthArray, evenLengthArray) {
+  var allNum = oddLengthArray + evenLengthArray);
+  for (var count = 0; count < allNum.length; count++)
+    sum1 += allNum[count];
+  console.log(sum1)
+  console.log(oddLengthArray)
+  console.log(evenLengthArray)
+}
+sum(oddLengthArray, evenLengthArray)
+
+//PERSON 4 - EDDIE BUENO
+
+function addArray(array,sum){
+  for (i = 0; i < array.length; i++)
+    sum += array[i];
+  return sum
+}
+function mean(oddArray, evenArray){
+  var sumEven = 0, sumOdd = 0;
+  var oddMean = addArray(oddArray,sumOdd)/oddArray.length, evenMean = addArray(evenArray,sumEven)/evenArray.length;
+  console.log(oddMean)
+  console.log(evenMean)
+  return oddMean, evenMean
+}
+function median(oddArray, evenArray){
+  var oddMedian1 = oddArray.sort()[oddArray.length / 2];
+  var oddMedian2 = oddArray.sort()[(oddArray.length / 2) -1];
+  console.log("Here are the medians: " + oddMedian1,oddMedian2)
+  var oddMedian = (oddMedian1 + oddMedian2) / 2;
+  var evenMedian = evenArray.sort()[(evenArray.length / 2) - 1];
+  console.log(oddMedian + evenMedian)
+
+  return oddMedian, evenMedian
+}
+mean(oddLengthArray, evenLengthArray)
+median(oddLengthArray, evenLengthArray)
 
 function assert(test, message, test_number) {
   if (!test) {

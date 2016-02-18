@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with Tori, Ryan, Rocky.
+This challenge took me 2 hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -15,7 +15,19 @@ var scores = [ [80, 70, 70, 100],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
 
+/*
+PSEUDOCODE
 
+Input: ARRAY of names, ARRAY of ARRAYS of grades
+Output: One OBJECT of names connected to grades, with functions to return averages
+Steps:
+  1. Create a gradebook variable and assign it to the variable of empty object.
+  2. LOOP through students and scores arrays, and connect names to scores
+  3. Create funciton to add new scores to a student's grades
+  4. Create function that returns average grade for given student.
+  5. Create function that returns average grade for all students.
+
+*/
 
 
 
@@ -23,28 +35,100 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {};
+
+// function student (name, scores) {
+//   this.name = name;
+//   this.scores = scores;
+// }
+
+// for (var i in students) {
+//   gradebook[students[i]] = {};
+//   gradebook[students[i]]["testScores"] = scores[i];
+// }
 
 
+// //var addScore = function (name, score) {
+// //  gradebook[name].push(score);
+// //}
+// //gradebook["addScore"] = addScore;
+
+// gradebook.addScore = function (name, score) {
+//   gradebook[name].testScores.push(score);
+// }
+
+// function average (num_array) {
+//   var avg = null;
+//   for(var i = 0; i < num_array.length; i++ ) {
+//     avg += num_array[i];
+//   }
+//   avg = avg / num_array.length;
+//   return avg;
+// }
+
+// gradebook.getAverage = function(name) {
+//   return average(gradebook[name].testScores);
+// }
 
 
+// gradebook.addScore("Susan", 80);
+// console.log(gradebook);
+
+// gradebook.getAverage("Elizabeth");
+
+// console.log(gradebook.William.testScores);
+// gradebook
+//  Joseph
+//    testscores =>[]
+//  William
+//    testscores =>[]
+//  Susan
+//    testscores =>[]
+//  getAverage => function
+//  addScore => function
 
 
 
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {};
 
+for (var i in students) {
+  gradebook[students[i]] = {testScores: scores[i]};
+}
 
+gradebook.addScore = function (name, score) {
+  gradebook[name].testScores.push(score);
+}
 
+function average (num_array) {
+  var avg = null;
+  for(var i = 0; i < num_array.length; i++ ) {
+    avg += num_array[i];
+  }
+  avg = avg / num_array.length;
+  return avg;
+}
 
-
-
+gradebook.getAverage = function(name) {
+  return average(gradebook[name].testScores);
+}
 
 // __________________________________________
 // Reflect
 
+/*
+What did you learn about adding functions to objects?
+We learned about anonymous vs variable functions.
 
+How did you iterate over nested arrays in JavaScript?
+You iterate over nested arrays by continually adding [] to the end of your array variable. It is best to use a for loop!
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+We used #push, very handy function! #push adds a new value to the end of the given array. For example, array.push(3) would change array from [1,2] to [1,2,3].
+
+*/
 
 
 
@@ -121,3 +205,4 @@ assert(
   "gradebook's getAverage should return 80 if passed 'Joseph'.",
   "9. "
 )
+

@@ -58,3 +58,15 @@ $( document ).click(function() {
 // });
 
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
+
+// REFLECT
+
+// What is jQuery?
+// JQuery is a JavaScript library to allows you to easily interact with HTML elements and CSS attributes.
+
+
+// What does jQuery do for you?
+// JQuery allows you to easily interact with HTML elements and CSS attributes.
+
+// What did you learn about the DOM while working on this challenge?
+// Don't add quotes around document!
